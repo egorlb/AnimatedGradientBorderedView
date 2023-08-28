@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hdN-SX-7Ts">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7bz-Z5-i1b">
+            <objects>
+                <viewController id="hdN-SX-7Ts" customClass="ViewController" customModule="BorderGradientView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJI-76-n5s">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8SK-Ki-fGd" customClass="AnimatedGradientBorderedView" customModule="BorderGradient" customModuleProvider="target">
+                                <rect key="frame" x="34" y="180" width="325" height="492"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="492" id="05l-Ta-YKm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v77-Mg-sPc"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v77-Mg-sPc" firstAttribute="trailing" secondItem="8SK-Ki-fGd" secondAttribute="trailing" constant="34" id="CcN-6o-8QM"/>
+                            <constraint firstItem="8SK-Ki-fGd" firstAttribute="centerY" secondItem="sJI-76-n5s" secondAttribute="centerY" id="P0C-J5-wsJ"/>
+                            <constraint firstItem="8SK-Ki-fGd" firstAttribute="leading" secondItem="v77-Mg-sPc" secondAttribute="leading" constant="34" id="bYM-Rk-8Gw"/>
+                            <constraint firstItem="8SK-Ki-fGd" firstAttribute="centerX" secondItem="sJI-76-n5s" secondAttribute="centerX" id="xde-jg-4Tc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradientView" destination="8SK-Ki-fGd" id="CcE-VX-82g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ib1-xa-yA6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="4"/>
+        </scene>
+    </scenes>
+</document>
